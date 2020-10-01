@@ -1,5 +1,6 @@
 # Iterative Sorting Algorithms
 
+
 ## Bubble Sort
 
 In **Bubble Sort**, we make a series of swaps between adjacent elements, gradually moving larger elements towards the end of the array (or _bubbling_ larger elements up).
