@@ -2,23 +2,27 @@
 def selection_sort(arr):
     # iterate through array (represents sorted-unsorted boundary moving across array), find smallest element in unsorted portion
     # once found, swap it with element on right edge of sorted portion
-    for i in range(len(arr)):
-        #index of boundary, as well as index we're going to swap smallest element with
-        boundary = i
 
-        # find smallest element in unsorteed portion
-        smallest_value  = arr[boundary]
-        smallest_index = boundary
-        for unsorted_index in range(boundary, len(arr)):
-            if arr[unsorted_index] < smallest_value:
-                smallest_value = arr[unsorted_index]
-                smallest_index = unsorted_index
 
-        # 'smallest_index' is the smallest element in unsorted portion
 
-        # once that's found, swap it with element on right edge
-        arr[boundary], arr[smallest_index] = arr[smallest_index], arr[boundary]
-    return arr
+    # for i in range(len(arr)):
+    #     #index of boundary, as well as index we're going to swap smallest element with
+    #     boundary = i
+
+    #     # find smallest element in unsorteed portion
+    #     smallest_value  = arr[boundary]
+    #     smallest_index = boundary
+    #     for unsorted_index in range(boundary, len(arr)):
+    #         if arr[unsorted_index] < smallest_value:
+    #             smallest_value = arr[unsorted_index]
+    #             smallest_index = unsorted_index
+
+    #     # 'smallest_index' is the smallest element in unsorted portion
+
+    #     # once that's found, swap it with element on right edge
+    #     arr[boundary], arr[smallest_index] = arr[smallest_index], arr[boundary]
+    # return arr
+
 
     for i in range(0, len(arr)-1):
         # SECOND SOLUTION
